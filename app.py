@@ -1,10 +1,3 @@
-# @Email:  contact@pythonandvba.com
-# @Website:  https://pythonandvba.com
-# @YouTube:  https://youtube.com/c/CodingIsFun
-# @Project:  Sales Dashboard w/ Streamlit
-
-
-
 import pandas as pd  # pip install pandas openpyxl
 import plotly.express as px  # pip install plotly-express
 import streamlit as st  # pip install streamlit
@@ -30,7 +23,7 @@ def get_data_from_excel():
 df = get_data_from_excel()
 
 # ---- SIDEBAR ----
-st.sidebar.header("Please Filter Here:")
+st.sidebar.header("Please Select Filter Here:")
 city = st.sidebar.multiselect(
     "Select the City:",
     options=df["City"].unique(),
@@ -125,3 +118,5 @@ hide_st_style = """
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
+# ruorojohn
+# tutorial by coding is fun
